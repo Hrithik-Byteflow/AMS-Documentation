@@ -30,6 +30,6 @@ flowchart TD
 
     R[Registration screen\nPersonal & Society Details]
     R --> S{User exits app?}
-    S -- Completes --> T([Proceed with Registration])
+    S -- No --> T([Proceed with Registration])
     S -- Exits --> A
 ```
