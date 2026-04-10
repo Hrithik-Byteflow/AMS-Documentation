@@ -18,7 +18,7 @@ flowchart TD
     G -- No --> E
     G -- Yes --> R
 
-    J --> K[Error: Mobile no already verified\nPlease login directly]
+    J --> K[Error: Mobile No already verified\nPlease login directly]
     K --> L[Click Direct Login link]
     L --> M[Login page\nMobile No. + Password]
     M --> N[Click 'Login using passcode']
