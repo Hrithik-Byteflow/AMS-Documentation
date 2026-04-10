@@ -12,15 +12,15 @@ flowchart TD
 
     B --> C[Enter mobile number]
     C --> D[Click 'Request Passcode']
-    D --> E[6-digit passcode sent to mobile]
+    D --> E[6-digit passcode sent to mobile no]
     E --> F[Enter passcode & click Next]
     F --> G{Passcode valid?}
     G -- No --> E
     G -- Yes --> R
 
-    J --> K[Error: Mobile already registered\nPlease login directly]
+    J --> K[Error: Mobile no already verified\nPlease login directly]
     K --> L[Click Direct Login link]
-    L --> M[Login page\nMobile no. + Password]
+    L --> M[Login page\nMobile No. + Password]
     M --> N[Click 'Login using passcode']
     N --> O[Password field → 6-digit passcode field]
     O --> P[Enter mobile no. & passcode]
@@ -30,6 +30,6 @@ flowchart TD
 
     R[Registration screen\nPersonal & Society Details]
     R --> S{User exits app?}
-    S -- Completes --> T([Registration complete])
+    S -- Completes --> T([Proceed with Registration])
     S -- Exits --> A
 ```
